@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import type { Route } from "next";
 import { motion } from "framer-motion";
 import { ArrowRight, Sparkles } from "lucide-react";
 import type { ReactNode } from "react";
@@ -17,7 +18,7 @@ type AuthPageShellProps = {
   spotlightDescription: string;
   footerLabel: string;
   footerText: string;
-  footerHref: string;
+  footerHref: Route;
   accent: "aurora" | "coral";
   stats: Array<{
     label: string;
