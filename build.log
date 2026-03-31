@@ -1,0 +1,11 @@
+
+> youthvibe@0.1.0 build
+> next build
+
+  ▲ Next.js 14.2.26
+  - Experiments (use with caution):
+    · typedRoutes
+
+   Creating an optimized production build ...
+
+> Build failed because of webpack errors

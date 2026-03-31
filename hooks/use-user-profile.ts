@@ -6,7 +6,7 @@ import { profile as defaultProfile } from "@/data/profile";
 import { getFirstName, getInitials, readUserProfile } from "@/utils/user-profile";
 
 export function useUserProfile() {
-  const [fullName, setFullName] = useState(defaultProfile.name);
+  const [fullName, setFullName] = useState<string>(defaultProfile.name);
 
   useEffect(() => {
     const storedProfile = readUserProfile();

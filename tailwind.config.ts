@@ -18,7 +18,7 @@ const config: Config = {
         panel: "rgba(13, 18, 38, 0.72)"
       },
       fontFamily: {
-        sans: ["var(--font-manrope)", "sans-serif"]
+        sans: ["Manrope", "ui-sans-serif", "system-ui", "sans-serif"]
       },
       boxShadow: {
         glow: "0 20px 80px rgba(76, 242, 210, 0.18)",

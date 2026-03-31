@@ -38,7 +38,7 @@ body {
     radial-gradient(circle at 50% 120%, rgba(74, 112, 255, 0.1), transparent 24%),
     linear-gradient(135deg, #02050f 0%, #08101f 38%, #050816 100%);
   color: var(--text-primary);
-  font-family: var(--font-manrope), sans-serif;
+  font-family: Manrope, ui-sans-serif, system-ui, sans-serif;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }

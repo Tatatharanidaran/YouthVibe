@@ -1,14 +1,15 @@
 "use client";
 
-import { motion } from "framer-motion";
+import { motion, type HTMLMotionProps } from "framer-motion";
 import { Loader2 } from "lucide-react";
-import { forwardRef, type ButtonHTMLAttributes } from "react";
+import { forwardRef, type ReactNode } from "react";
 
 import { cn } from "@/utils/cn";
 
 type ButtonVariant = "primary" | "secondary" | "ghost";
 
-type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & {
+type ButtonProps = Omit<HTMLMotionProps<"button">, "children"> & {
+  children: ReactNode;
   variant?: ButtonVariant;
   loading?: boolean;
 };
