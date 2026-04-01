@@ -50,16 +50,16 @@ export function OpportunitiesBrowser() {
       <SectionTransition>
         <DashboardCard className="overflow-hidden p-0">
           <div className="relative p-6 sm:p-8">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(76,242,210,0.18),transparent_28%),radial-gradient(circle_at_82%_16%,rgba(255,122,89,0.14),transparent_24%)]" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(91,110,245,0.1),transparent_28%),radial-gradient(circle_at_82%_16%,rgba(138,150,184,0.08),transparent_24%)]" />
             <div className="relative">
-              <div className="inline-flex items-center gap-2 rounded-full border border-aurora/20 bg-aurora/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.28em] text-aurora">
+              <div className="inline-flex items-center gap-2 rounded-full border border-aurora/18 bg-aurora/10 px-3 py-1 text-xs font-medium uppercase tracking-[0.24em] text-aurora">
                 <Sparkles className="h-3.5 w-3.5" />
                 Opportunities
               </div>
-              <h1 className="mt-5 max-w-3xl text-4xl font-semibold tracking-[-0.05em] text-white sm:text-5xl">
+              <h1 className="mt-5 max-w-3xl text-4xl font-semibold tracking-[-0.05em] text-white sm:text-[3.2rem] sm:leading-[1.06]">
                 Browse roles, programs, and builder tracks made for momentum.
               </h1>
-              <p className="mt-4 max-w-2xl text-base leading-7 text-white/56">
+              <p className="mt-4 max-w-2xl text-base leading-7 text-white/52">
                 Explore curated opportunities across tech, design, business, AI, and startup
                 communities without the stale job-board feel.
               </p>
@@ -77,8 +77,8 @@ export function OpportunitiesBrowser() {
           />
 
           <div className="grid gap-4 lg:grid-cols-[1fr_auto]">
-            <div className="flex items-center gap-3 rounded-[24px] border border-white/10 bg-white/[0.03] px-4 py-4">
-              <Search className="h-5 w-5 text-white/36" />
+            <div className="flex items-center gap-3 rounded-[20px] border border-white/10 bg-white/[0.03] px-4 py-3.5">
+              <Search className="h-5 w-5 text-white/34" />
               <input
                 value={query}
                 onChange={(event) => setQuery(event.target.value)}
@@ -87,8 +87,8 @@ export function OpportunitiesBrowser() {
               />
             </div>
 
-            <div className="flex items-center gap-2 rounded-[24px] border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-white/56">
-              <SlidersHorizontal className="h-4 w-4 text-coral" />
+            <div className="flex items-center gap-2 rounded-[20px] border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-white/52">
+              <SlidersHorizontal className="h-4 w-4 text-aurora" />
               Personalized filters
             </div>
           </div>
@@ -115,7 +115,7 @@ export function OpportunitiesBrowser() {
                 initial={{ opacity: 0.4 }}
                 animate={{ opacity: [0.4, 0.7, 0.4] }}
                 transition={{ duration: 1.2, repeat: Infinity, ease: "easeInOut" }}
-                className="h-[320px] rounded-[28px] border border-white/8 bg-white/[0.04]"
+                className="h-[320px] rounded-[24px] border border-white/8 bg-white/[0.03]"
               />
             ))}
           </div>

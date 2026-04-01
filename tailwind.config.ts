@@ -11,23 +11,23 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        ink: "#070B16",
-        aurora: "#4CF2D2",
-        coral: "#FF7A59",
-        mist: "#95A4C6",
-        panel: "rgba(13, 18, 38, 0.72)"
+        ink: "#0F172A",
+        aurora: "#4F5FD7",
+        coral: "#7E879C",
+        mist: "#9AA3B5",
+        panel: "rgba(19, 24, 35, 0.84)"
       },
       fontFamily: {
         sans: ["Manrope", "ui-sans-serif", "system-ui", "sans-serif"]
       },
       boxShadow: {
-        glow: "0 20px 80px rgba(76, 242, 210, 0.18)",
-        panel: "0 24px 60px rgba(5, 10, 24, 0.45)",
-        floating: "0 28px 90px rgba(4, 9, 24, 0.55)"
+        glow: "0 10px 26px rgba(79, 95, 215, 0.14)",
+        panel: "0 10px 28px rgba(7, 12, 22, 0.14)",
+        floating: "0 14px 34px rgba(7, 12, 22, 0.18)"
       },
       backgroundImage: {
         mesh:
-          "radial-gradient(circle at top left, rgba(76, 242, 210, 0.22), transparent 30%), radial-gradient(circle at 85% 20%, rgba(255, 122, 89, 0.18), transparent 24%), radial-gradient(circle at 50% 80%, rgba(114, 93, 255, 0.14), transparent 28%)"
+          "radial-gradient(circle at top left, rgba(79, 95, 215, 0.1), transparent 30%), radial-gradient(circle at 80% 18%, rgba(154, 163, 181, 0.08), transparent 24%)"
       }
     }
   },

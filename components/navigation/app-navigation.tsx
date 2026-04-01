@@ -21,15 +21,15 @@ export function AppNavigation() {
 
   return (
     <div className="mb-6 space-y-4 sm:mb-8">
-      <div className="premium-surface flex flex-col gap-4 rounded-[30px] px-4 py-4 sm:px-5 lg:flex-row lg:items-center lg:justify-between">
+      <div className="premium-surface flex flex-col gap-4 rounded-[26px] px-4 py-4 sm:px-5 lg:flex-row lg:items-center lg:justify-between">
         <div className="flex items-center gap-4">
           <Link href="/dashboard" className="flex items-center gap-3">
-            <div className="flex h-12 w-12 items-center justify-center rounded-2xl border border-aurora/20 bg-aurora/10 text-aurora shadow-glow">
-              <Sparkles className="h-5 w-5" />
+            <div className="flex h-10 w-10 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.04] text-aurora">
+              <Sparkles className="h-4.5 w-4.5" />
             </div>
             <div>
               <p className="text-sm font-semibold tracking-[0.18em] text-white/44">YOUTHVIBE</p>
-              <p className="text-sm text-white/62">Student growth platform</p>
+              <p className="text-sm text-white/48">Student growth platform</p>
             </div>
           </Link>
         </div>
@@ -43,10 +43,10 @@ export function AppNavigation() {
                 key={item.href}
                 href={item.href}
                 className={cn(
-                  "inline-flex items-center gap-2 rounded-full border px-4 py-2.5 text-sm font-medium transition-all duration-300",
+                  "inline-flex items-center gap-2 rounded-full border px-4 py-2 text-sm font-medium transition-all duration-200",
                   isActive
-                    ? "border-aurora/30 bg-aurora/12 text-white shadow-glow"
-                    : "border-white/10 bg-white/[0.03] text-white/58 hover:border-white/20 hover:bg-white/[0.06] hover:text-white"
+                    ? "border-aurora/22 bg-aurora/10 text-white"
+                    : "border-white/10 bg-white/[0.03] text-white/56 hover:border-white/14 hover:bg-white/[0.05] hover:text-white"
                 )}
               >
                 <item.icon className="h-4 w-4" />
@@ -56,13 +56,13 @@ export function AppNavigation() {
           })}
         </nav>
 
-        <div className="flex items-center gap-3 rounded-[22px] border border-white/10 bg-white/[0.03] px-4 py-3">
-          <div className="flex h-11 w-11 items-center justify-center rounded-2xl border border-white/10 bg-[linear-gradient(135deg,rgba(76,242,210,0.16),rgba(255,122,89,0.16))] text-sm font-semibold text-white">
+        <div className="flex items-center gap-3 rounded-[20px] border border-white/10 bg-white/[0.03] px-4 py-3">
+          <div className="flex h-9 w-9 items-center justify-center rounded-2xl border border-white/10 bg-white/[0.04] text-sm font-semibold text-white">
             {initials}
           </div>
           <div>
             <p className="text-sm font-medium text-white">Hi, {firstName}</p>
-            <p className="text-xs uppercase tracking-[0.24em] text-white/36">Builder mode</p>
+            <p className="text-xs uppercase tracking-[0.24em] text-white/32">Builder mode</p>
           </div>
         </div>
       </div>
@@ -76,9 +76,9 @@ export function AppNavigation() {
               key={item.href}
               href={item.href}
               className={cn(
-                "inline-flex shrink-0 items-center gap-2 rounded-full border px-4 py-2.5 text-sm font-medium transition-all duration-300",
+                "inline-flex shrink-0 items-center gap-2 rounded-full border px-4 py-2 text-sm font-medium transition-all duration-200",
                 isActive
-                  ? "border-aurora/30 bg-aurora/12 text-white shadow-glow"
+                  ? "border-aurora/22 bg-aurora/10 text-white"
                   : "border-white/10 bg-white/[0.03] text-white/58"
               )}
             >

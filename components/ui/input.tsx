@@ -30,24 +30,23 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
 
     return (
       <div className="space-y-2.5">
-        <label htmlFor={inputId} className="block text-sm font-semibold tracking-[-0.01em] text-white/88">
+        <label htmlFor={inputId} className="block text-sm font-medium tracking-[-0.01em] text-white/82">
           {label}
         </label>
         <motion.div
           animate={{
-            borderColor: isFocused ? "rgba(76, 242, 210, 0.75)" : "rgba(255, 255, 255, 0.08)",
+            borderColor: isFocused ? "rgba(91, 110, 245, 0.4)" : "rgba(255, 255, 255, 0.08)",
             boxShadow: isFocused
-              ? "0 0 0 4px rgba(76, 242, 210, 0.12), 0 24px 50px rgba(4, 9, 24, 0.34)"
-              : "0 14px 34px rgba(4, 9, 24, 0.18)"
+              ? "0 0 0 3px rgba(91, 110, 245, 0.12)"
+              : "0 8px 24px rgba(4, 10, 24, 0.08)"
           }}
-          transition={{ duration: 0.24, ease: "easeOut" }}
-          className="group relative flex h-14 items-center gap-3 rounded-2xl border bg-white/[0.04] px-4 backdrop-blur"
+          transition={{ duration: 0.18, ease: "easeOut" }}
+          className="group relative flex h-12 items-center gap-3 rounded-xl border bg-white/[0.03] px-4 backdrop-blur"
         >
-          <span className="absolute inset-0 rounded-2xl bg-[radial-gradient(circle_at_top,rgba(255,255,255,0.12),transparent_40%)] opacity-60" />
           {icon ? (
             <span
               className={cn(
-                "relative text-white/45 transition-colors duration-200",
+                "relative text-white/38 transition-colors duration-200",
                 isFocused && "text-aurora"
               )}
             >
@@ -66,8 +65,8 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
             {...props}
           />
         </motion.div>
-        {error ? <p className="text-sm text-rose-300">{error}</p> : null}
-        {!error && hint ? <p className="text-sm leading-6 text-white/42">{hint}</p> : null}
+        {error ? <p className="text-sm text-rose-300/90">{error}</p> : null}
+        {!error && hint ? <p className="text-sm leading-6 text-white/40">{hint}</p> : null}
       </div>
     );
   }

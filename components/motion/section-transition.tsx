@@ -13,10 +13,10 @@ type SectionTransitionProps = {
 export function SectionTransition({ children, className }: SectionTransitionProps) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 26, scale: 0.985 }}
-      whileInView={{ opacity: 1, y: 0, scale: 1 }}
+      initial={{ opacity: 0, y: 14 }}
+      whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.18 }}
-      transition={{ duration: 0.65, ease: [0.22, 1, 0.36, 1] }}
+      transition={{ duration: 0.32, ease: "easeOut" }}
       className={cn(className)}
     >
       {children}

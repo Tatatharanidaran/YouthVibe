@@ -28,26 +28,26 @@ export function EventsBrowser() {
       <SectionTransition>
         <DashboardCard className="overflow-hidden p-0">
           <div className="relative grid gap-6 p-6 sm:p-8 xl:grid-cols-[1.15fr_0.85fr]">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,122,89,0.18),transparent_28%),radial-gradient(circle_at_82%_18%,rgba(76,242,210,0.14),transparent_24%)]" />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(91,110,245,0.1),transparent_28%),radial-gradient(circle_at_82%_18%,rgba(138,150,184,0.08),transparent_24%)]" />
 
             <div className="relative">
-              <div className="inline-flex items-center gap-2 rounded-full border border-coral/20 bg-coral/10 px-3 py-1 text-xs font-semibold uppercase tracking-[0.28em] text-coral">
+              <div className="inline-flex items-center gap-2 rounded-full border border-aurora/18 bg-aurora/10 px-3 py-1 text-xs font-medium uppercase tracking-[0.24em] text-aurora">
                 <Sparkles className="h-3.5 w-3.5" />
                 Featured event
               </div>
-              <h1 className="mt-5 max-w-3xl text-4xl font-semibold tracking-[-0.05em] text-white sm:text-5xl">
+              <h1 className="mt-5 max-w-3xl text-4xl font-semibold tracking-[-0.05em] text-white sm:text-[3.2rem] sm:leading-[1.06]">
                 {featuredEvent.title}
               </h1>
-              <p className="mt-4 max-w-2xl text-base leading-7 text-white/56">
+              <p className="mt-4 max-w-2xl text-base leading-7 text-white/52">
                 {featuredEvent.description}
               </p>
 
-              <div className="mt-6 flex flex-wrap gap-3 text-sm text-white/60">
-                <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-4 py-3">
+              <div className="mt-6 flex flex-wrap gap-3 text-sm text-white/56">
+                <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-4 py-2.5">
                   <CalendarRange className="h-4 w-4 text-aurora" />
                   {featuredEvent.date} · {featuredEvent.time}
                 </div>
-                <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.04] px-4 py-3">
+                <div className="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-4 py-2.5">
                   <MapPin className="h-4 w-4 text-aurora" />
                   {featuredEvent.venue}
                 </div>
@@ -57,9 +57,9 @@ export function EventsBrowser() {
             </div>
 
             <div className="relative grid gap-4">
-              <div className="rounded-[28px] border border-white/10 bg-white/[0.04] p-5">
-                <div className="flex items-center gap-2 text-sm uppercase tracking-[0.24em] text-white/42">
-                  <Zap className="h-4 w-4 text-coral" />
+              <div className="rounded-[24px] border border-white/10 bg-white/[0.03] p-5">
+                <div className="flex items-center gap-2 text-sm uppercase tracking-[0.24em] text-white/36">
+                  <Zap className="h-4 w-4 text-aurora" />
                   Why it stands out
                 </div>
                 <div className="mt-5 space-y-3">
@@ -68,8 +68,8 @@ export function EventsBrowser() {
                       key={highlight}
                       initial={{ opacity: 0, x: 16 }}
                       animate={{ opacity: 1, x: 0 }}
-                      transition={{ duration: 0.4, ease: "easeOut" }}
-                      className="rounded-2xl border border-white/10 bg-[#0a1225] px-4 py-3 text-sm text-white/72"
+                      transition={{ duration: 0.25, ease: "easeOut" }}
+                      className="rounded-[20px] border border-white/10 bg-white/[0.03] px-4 py-3 text-sm text-white/66"
                     >
                       {highlight}
                     </motion.div>
@@ -77,12 +77,12 @@ export function EventsBrowser() {
                 </div>
               </div>
 
-              <div className="rounded-[28px] border border-white/10 bg-white/[0.04] p-5">
-                <p className="text-sm uppercase tracking-[0.24em] text-white/42">Event type</p>
+              <div className="rounded-[24px] border border-white/10 bg-white/[0.03] p-5">
+                <p className="text-sm uppercase tracking-[0.24em] text-white/36">Event type</p>
                 <p className="mt-3 text-xl font-semibold tracking-[-0.03em] text-white">
                   {featuredEvent.type}
                 </p>
-                <p className="mt-3 text-sm leading-6 text-white/52">
+                <p className="mt-3 text-sm leading-6 text-white/48">
                   Built for students who want high-energy rooms, real conversations, and practical
                   momentum.
                 </p>

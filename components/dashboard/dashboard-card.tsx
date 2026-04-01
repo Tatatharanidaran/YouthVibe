@@ -12,11 +12,11 @@ type DashboardCardProps = HTMLMotionProps<"div"> & {
 export function DashboardCard({ children, className, ...props }: DashboardCardProps) {
   return (
     <motion.div
-      whileHover={{ y: -6 }}
-      transition={{ type: "spring", stiffness: 280, damping: 24 }}
+      whileHover={{ y: -2 }}
+      transition={{ duration: 0.22, ease: "easeOut" }}
       className={cn(
-        "premium-surface relative rounded-[28px] p-5 shadow-panel transition-[border-color,box-shadow,transform] duration-300 sm:p-6",
-        "hover:border-white/14 hover:shadow-floating",
+        "premium-surface relative rounded-[22px] p-5 shadow-panel transition-[border-color,box-shadow,transform] duration-200 sm:p-6",
+        "hover:border-white/10 hover:shadow-panel",
         className
       )}
       {...props}

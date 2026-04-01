@@ -44,14 +44,14 @@ export function AuthPageShell({
 }: AuthPageShellProps) {
   return (
     <main className="relative min-h-screen overflow-hidden px-4 py-5 sm:px-6 sm:py-6 lg:px-8 lg:py-8">
-      <div className="hero-grid absolute inset-0 opacity-40" />
+      <div className="hero-grid absolute inset-0 opacity-28" />
       <motion.div
         aria-hidden
-        animate={{ scale: [1, 1.08, 1], opacity: [0.35, 0.5, 0.35] }}
-        transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
+        animate={{ scale: [1, 1.02, 1], opacity: [0.12, 0.16, 0.12] }}
+        transition={{ duration: 14, repeat: Infinity, ease: "easeInOut" }}
         className={cn(
           "absolute inset-x-auto top-[-140px] h-[360px] w-[360px] rounded-full blur-3xl",
-          accent === "aurora" ? "right-[-120px] bg-aurora/20" : "left-[-120px] bg-coral/20"
+          accent === "aurora" ? "right-[-120px] bg-aurora/12" : "left-[-120px] bg-coral/10"
         )}
       />
 
@@ -75,11 +75,11 @@ export function AuthPageShell({
           >
             <div className="mb-8 flex items-center justify-between">
               <div>
-                <div className="mb-2 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs font-medium uppercase tracking-[0.28em] text-white/60">
+                <div className="mb-2 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-3 py-1 text-[11px] font-medium uppercase tracking-[0.22em] text-white/44">
                   <Sparkles className="h-3.5 w-3.5" />
                   YouthVibe
                 </div>
-                <p className="text-sm text-white/45">
+                <p className="text-sm text-white/42">
                   Student-first growth platform for builders, not browsers.
                 </p>
               </div>
